@@ -1,0 +1,14 @@
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.AssemblyInfoInputs.cache
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.AssemblyInfo.cs
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.csproj.CoreCompileInputs.cache
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\bin\Debug\net9.0\CSharpFundamentals.exe
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\bin\Debug\net9.0\CSharpFundamentals.deps.json
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\bin\Debug\net9.0\CSharpFundamentals.runtimeconfig.json
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\bin\Debug\net9.0\CSharpFundamentals.dll
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\bin\Debug\net9.0\CSharpFundamentals.pdb
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.dll
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\refint\CSharpFundamentals.dll
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.pdb
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\CSharpFundamentals.genruntimeconfig.cache
+c:\Users\Gol.D.Jeff\Documents\My Coding Practice\C#\CSharpFundamentals\obj\Debug\net9.0\ref\CSharpFundamentals.dll
