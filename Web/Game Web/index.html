@@ -6,16 +6,34 @@
         <title>Practice</title>
         <link rel="stylesheet" href="styles.css">
         <style>
-            table, th, td {
-                border: solid 1px black ;
+            ul {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                list-style-type: none;
+                background-color: blue;
             }
-            th, td {
-                padding: 15px;
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 16px;
                 text-align: center;
+            }
+            li a:hover {
+                background-color: white;
+                color: black;
             }
         </style>
     </head>
     <body>
-        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </body>
 </html>
