@@ -1,6 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio of Gol.D.Jeff — web developer. Projects, skills and contact info." />
+    <title>Gol.D.Jeff — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#">Gol.D.Jeff</a>
+            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="sr-only">Toggle navigation</span>
+                ☰
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="btn ghost" href="#projects">Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1 class="heading-xl">Hi, I'm Gol — a Web Developer.</h1>
+                    <p class="lead">I build accessible, responsive websites and interactive web apps. I focus on clean UI, performance, and thoughtful UX.</p>
+                    <p class="hero-cta">
+                        <a class="btn" href="#projects">See Projects</a>
+                        <a class="btn outline" href="#contact">Get in Touch</a>
+                    </p>
+                </div>
+                <div class="hero-media" aria-hidden="true">
+                    <img src="https://via.placeholder.com/320x320.png?text=Profile" alt="Profile placeholder" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <p>Hello — I'm a front-end developer with a knack for turning ideas into polished, accessible websites. I enjoy working with modern web technologies and learning new tools to improve performance and UX.</p>
+                        <p>I specialize in HTML, CSS, and JavaScript, and I enjoy building small web apps, interactive UIs, and responsive sites.</p>
+                        <p><a class="btn ghost" href="#">Download Resume</a></p>
+                    </div>
+                    <div class="about-skills" aria-label="Skills">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive Design</li>
+                            <li>Accessibility (a11y)</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-lead">A selection of projects — click to view live demo or source.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+1" alt="Project 1 screenshot">
+                        <div class="project-card-body">
+                            <h3>Project One</h3>
+                            <p>Responsive landing page with CSS animations and accessible markup.</p>
+                            <p class="card-actions"><a class="btn small" href="#">Live</a> <a class="btn ghost small" href="#">Source</a></p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+2" alt="Project 2 screenshot">
+                        <div class="project-card-body">
+                            <h3>Project Two</h3>
+                            <p>Small web app demonstrating client-side state and API integration.</p>
+                            <p class="card-actions"><a class="btn small" href="#">Live</a> <a class="btn ghost small" href="#">Source</a></p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+3" alt="Project 3 screenshot">
+                        <div class="project-card-body">
+                            <h3>Project Three</h3>
+                            <p>Interactive data visualization built with D3.js.</p>
+                            <p class="card-actions"><a class="btn small" href="#">Live</a> <a class="btn ghost small" href="#">Source</a></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-lead">Want to work together or have a question? Send a message.</p>
+                <form id="contact-form" class="contact-form" aria-label="Contact form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send Message</button>
+                        <button type="reset" class="btn ghost">Reset</button>
+                    </div>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Gol.D.Jeff — Built with HTML, CSS & JavaScript.</p>
+            <p class="socials"><a href="#" aria-label="GitHub">GitHub</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
