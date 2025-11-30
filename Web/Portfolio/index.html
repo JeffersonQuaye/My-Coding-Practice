@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Personal portfolio of Gol.D.Jeff — web developer. Projects, skills and contact info." />
-    <title>Jefferson Nii Addo Quaye — Portfolio</title>
+    <meta name="description" content="Jefferson Nii Addo Quaye — Web Developer. I build accessible, responsive websites and interactive web apps." />
+    <meta name="theme-color" content="#0f4c81" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content="Jefferson Nii Addo Quaye — Web Developer Portfolio" />
+    <meta property="og:description" content="Explore my projects in web development, HTML, CSS, JavaScript, and responsive design." />
+    <meta property="og:type" content="website" />
+    <title>Jefferson Nii Addo Quaye — Web Developer | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
+    <a href="#main-content" class="sr-only sr-focus">Skip to main content</a>
+    <header class="site-header" role="banner">
         <div class="container header-inner">
             <a class="logo" href="#">Jefferson Nii Addo Quaye</a>
             <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
@@ -29,8 +35,8 @@
         </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
+    <main id="main-content" role="main">
+        <section id="hero" class="hero" aria-label="Hero section">
             <div class="container hero-inner">
                 <div class="hero-copy">
                     <h1 class="heading-xl">Hi, I'm Jefferson — a Web and Mobile Application Developer.</h1>
@@ -46,9 +52,9 @@
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about" aria-label="About section">
             <div class="container">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title">About Me</h2>
                 <div class="about-grid">
                     <div class="about-bio">
                         <p>Hello — I'm a front-end developer with a knack for turning ideas into polished, accessible websites. I enjoy working with modern web technologies and learning new tools to improve performance and UX.</p>
@@ -69,9 +75,9 @@
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="projects" class="projects" aria-label="Projects section">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">Featured Projects</h2>
                 <p class="section-lead">A selection of projects — click to view live demo or source.</p>
                 <div class="projects-grid">
                     <article class="project-card">
@@ -111,9 +117,9 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact" aria-label="Contact section">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Get In Touch</h2>
                 <p class="section-lead">Want to work together or have a question? Send a message.</p>
                 <form id="contact-form" class="contact-form" aria-label="Contact form">
                     <label for="name">Name</label>
@@ -135,10 +141,10 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <div class="container footer-inner">
-            <p>&copy; <span id="year"></span> Gol.D.Jeff — Built with HTML, CSS & JavaScript.</p>
-            <p class="socials"><a href="#" aria-label="GitHub">GitHub</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a></p>
+            <p>&copy; <span id="year"></span> Jefferson Nii Addo Quaye — Crafted with <span aria-label="love">♡</span> using HTML, CSS & JavaScript.</p>
+            <p class="socials"><a href="#" aria-label="GitHub profile">GitHub</a> · <a href="#" aria-label="LinkedIn profile">LinkedIn</a> · <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button></p>
         </div>
     </footer>
 
