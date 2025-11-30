@@ -359,6 +359,10 @@ body{
     outline-offset:2px
 }
 
+.theme-toggle:active{
+    background-color: white;
+} 
+
 /* Utility */
 .section-title{
     font-size:1.25rem;
