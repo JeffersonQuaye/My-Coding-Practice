@@ -3,24 +3,64 @@
 	<head>		
 		<title>CSS Examples</title>
 		<style>
-			a {
-				text-decoration: none;
-			}
-			a:link {
-				color: red;
-			}
-			a:visited {
-				color: gray;
-			}
-			a:hover {
-				color: pink;
-			}
-			a:active {
-				color: green;
-			}
 		</style>
 	</head>
 	<body>
-		<a href="https://www.udemy.com">Click Here For Udemy</a>
+		Unordered nested List(by Default):
+		<ul>
+			<li>Tea</li>
+			<li>Coffee</li>
+			<li>Soft Drink</li>
+			<ul>
+				<li>Coca-Cola</li>
+				<li>Mirinda</li>
+				<li>ThumpsUp</li>
+			</ul>
+		</ul>
+		<hr/>Similarely using styling:
+		<ul>
+			<li style="list-style-type: square;">1</li>
+			<li style="list-style-type: square;">1</li>
+			<li style="list-style-type: square;">1</li>
+		</ul>
+		<ul>
+			<li style="list-style-type: disc;">2</li>
+			<li style="list-style-type: disc;">2</li>
+			<li style="list-style-type: disc;">2</li>
+		</ul>
+		<ul>
+			<li style="list-style-type: circle;">3</li>
+			<li style="list-style-type: circle;">3</li>
+			<li style="list-style-type: circle;">3</li>
+		</ul>
+		<hr>
+		<ol>
+			<li style="list-style-type: lower-roman;"></li>
+			<li style="list-style-type: lower-roman;"></li>
+			<li style="list-style-type: lower-roman;"></li>
+		</ol>
+		<ol>
+			<li style="list-style-type: upper-roman;"></li>
+			<li style="list-style-type: upper-roman;"></li>
+			<li style="list-style-type: upper-roman;"></li>
+		</ol>
+		<ol>
+			<li style="list-style-type: lower-alpha;"></li>
+			<li style="list-style-type: lower-alpha;"></li>
+			<li style="list-style-type: lower-alpha;"></li>
+		</ol>
+		<ol>
+			<li style="list-style-type: upper-alpha;"></li>
+			<li style="list-style-type: upper-alpha;"></li>
+			<li style="list-style-type: upper-alpha;"></li>
+		</ol>
+		<hr>
+		To prepare LList in horizontal:
+		<ul>
+			<li style="float: left; width: 10%;">Home</li>
+			<li style="float: left; width: 10%;">About Us</li>
+			<li style="float: left; width: 10%;">Services</li>
+			<li style="float: left; width: 10%;">Contact Us</li>
+		</ul>
 	</body>
 </html>
