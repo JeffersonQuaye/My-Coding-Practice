@@ -3,64 +3,24 @@
 	<head>		
 		<title>CSS Examples</title>
 		<style>
+			div#mydiv {
+				width: 150px;
+				height: 150px;
+				background-color: red;
+				animation-name: example;
+				animation-duration: 10s;
+			}
+
+			@keyframes example {
+				0% {background-color: red;}
+				25% {background-color: yellow;}
+				50% {background-color: blue;}
+				75% {background-color: green;}
+				100% {background-color: gold}
+			}
 		</style>
 	</head>
 	<body>
-		Unordered nested List(by Default):
-		<ul>
-			<li>Tea</li>
-			<li>Coffee</li>
-			<li>Soft Drink</li>
-			<ul>
-				<li>Coca-Cola</li>
-				<li>Mirinda</li>
-				<li>ThumpsUp</li>
-			</ul>
-		</ul>
-		<hr/>Similarely using styling:
-		<ul>
-			<li style="list-style-type: square;">1</li>
-			<li style="list-style-type: square;">1</li>
-			<li style="list-style-type: square;">1</li>
-		</ul>
-		<ul>
-			<li style="list-style-type: disc;">2</li>
-			<li style="list-style-type: disc;">2</li>
-			<li style="list-style-type: disc;">2</li>
-		</ul>
-		<ul>
-			<li style="list-style-type: circle;">3</li>
-			<li style="list-style-type: circle;">3</li>
-			<li style="list-style-type: circle;">3</li>
-		</ul>
-		<hr>
-		<ol>
-			<li style="list-style-type: lower-roman;"></li>
-			<li style="list-style-type: lower-roman;"></li>
-			<li style="list-style-type: lower-roman;"></li>
-		</ol>
-		<ol>
-			<li style="list-style-type: upper-roman;"></li>
-			<li style="list-style-type: upper-roman;"></li>
-			<li style="list-style-type: upper-roman;"></li>
-		</ol>
-		<ol>
-			<li style="list-style-type: lower-alpha;"></li>
-			<li style="list-style-type: lower-alpha;"></li>
-			<li style="list-style-type: lower-alpha;"></li>
-		</ol>
-		<ol>
-			<li style="list-style-type: upper-alpha;"></li>
-			<li style="list-style-type: upper-alpha;"></li>
-			<li style="list-style-type: upper-alpha;"></li>
-		</ol>
-		<hr>
-		To prepare LList in horizontal:
-		<ul>
-			<li style="float: left; width: 10%;">Home</li>
-			<li style="float: left; width: 10%;">About Us</li>
-			<li style="float: left; width: 10%;">Services</li>
-			<li style="float: left; width: 10%;">Contact Us</li>
-		</ul>
+		<div id="mydiv"></div>
 	</body>
 </html>
