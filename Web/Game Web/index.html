@@ -3,24 +3,20 @@
 	<head>		
 		<title>CSS Examples</title>
 		<style>
-			div#mydiv {
-				width: 150px;
-				height: 150px;
+			div {
+				width: 300px;
+				height: 100px;
 				background-color: red;
-				animation-name: example;
-				animation-duration: 10s;
+				border: 1px solid black;
 			}
 
-			@keyframes example {
-				0% {background-color: red;}
-				25% {background-color: yellow;}
-				50% {background-color: blue;}
-				75% {background-color: green;}
-				100% {background-color: gold}
+			div#mydiv {
+				transform: skewX(20deg);
 			}
 		</style>
 	</head>
 	<body>
-		<div id="mydiv"></div>
+		<div>This is box 1</div>
+		<div id="mydiv">This is  box 2</div>
 	</body>
 </html>
