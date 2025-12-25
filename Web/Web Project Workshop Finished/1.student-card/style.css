@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.student-card{
+    background-color: white;
+    width: 400px;
+    height: 470px;
+    border: 2px solid #4a90e2;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.header{
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
