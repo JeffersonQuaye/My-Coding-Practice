@@ -39,5 +39,11 @@ body{
 
 .info h2{
     font-size: 35px;
-    margin: 9px;
+    margin: 9px 0;
+}
+
+.info p{
+    font-size: 20px;
+    color: grey;
+    margin: 5px 0;
 }
