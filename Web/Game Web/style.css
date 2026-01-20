@@ -1,12 +1,8 @@
-ul {
-    list-style-type: disc;
-
-}
-
-ol {
-    list-style-type: lower-roman;
-}
-
-dl {
-    font-weight: normal;
+div{
+    width: 300px;
+    height: 150px;
+    padding: 50px;
+    border: 15px solid green;
+    margin: 15px;
+    background-color: lightblue;
 }
