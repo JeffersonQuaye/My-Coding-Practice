@@ -5,5 +5,70 @@
 }
 
 body{
-    
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 32px;
+}
+
+.registration-form{
+    background-color: #201f1f;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px 48px;
+}
+
+.registration-form h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    background-color: rgb(11, 11, 11);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-content label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.form-content input{
+    border-radius: 10px;
+    background-color: rgb(11, 11, 11);
+    color: white;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.form-content button{
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(11, 11, 11);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: 3s ease; 
+    transform: 3s ease;
+}
+
+.form-content button:hover{
+    background-color: #555;
+}
+
+.form-content button:active{
+    background-color: #777;
+    transform: scale(0.98);
 }
