@@ -47,4 +47,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
 }
+
+.todo-item label{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.todo-item input{
+    cursor: pointer;
+}
+
+.icons{
+    align-items: center;
+}
+
+#edit-icon, #delete-icon{
+    width: 20px;
+    height: 20px;
+}
+
