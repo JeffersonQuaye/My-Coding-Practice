@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(23, 22, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(135deg, #3b8d99, #6b6b83);
+    padding: 55px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.chip{
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(145deg, #d4af37, #b8860b);
+    border-radius: 8px;
+    border: rgb(120, 120, 120) 2px solid ;
+}
+
+.card-number{
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+label{
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.name, .expiry{
+    font-size: 16px;
+    margin-top: 5px;
+}
