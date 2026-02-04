@@ -4,8 +4,87 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(water-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.travel-card{
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.title{
+    background: linear-gradient(to top right, #ffffff, #5aaaff);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+h1{
+    color: #333;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card{
+    background: linear-gradient(to top right, #ffffff, #8ac3ff);
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h2{
+    color: #2c3e50;
+}
+
+.card-content p{
+    color: #232323;
+    margin: 15px 0 20px;
+}
+
+#explore{
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #278fd4;
+    border-radius: 5px;
+    color: white;    
+    background-color: 0.3s ease;
+}
+
+button:hover{
+    background-color: #0b7ac5;
 }
