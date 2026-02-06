@@ -19,9 +19,9 @@ body{
     background-attachment: fixed;
 }
 
-.coontact{
+.contact{
     width: 650px;
-    animation: 0.6s ease-in;
+    animation: fadeIn 0.6s ease-in;
 }
 
 h1{
@@ -114,4 +114,13 @@ button{
 
 button:hover{
     background-color: rgba(28, 28, 28, 0.4);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
