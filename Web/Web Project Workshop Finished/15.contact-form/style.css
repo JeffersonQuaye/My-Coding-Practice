@@ -5,7 +5,10 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: linear-gradient(to bottom, black, blue);
     background-repeat: no-repeat;
-    backgrou;
 }
