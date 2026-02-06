@@ -4,12 +4,114 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, black, blue);
+    background: linear-gradient(to bottom, black, darkblue);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.coontact{
+    width: 650px;
+    animation: 0.6s ease-in;
+}
+
+h1{
+    color: white;
+    font-size: 56px;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #65ffd1;
+    font-size: 19px;
+    text-align: center;
+}
+
+.contact-info{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details{
+    font-size: 18px;
+    color: #e2e2e2;
+    text-align: center;
+}
+
+.text{
+    font-size: 18px;
+    color: #e2e2e2;
+    width: 500px;
+    margin-bottom: 3%;
+}
+
+.details a{
+    color: #65ffd1;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #65ffd1;
+    padding: 10px;
+    background-color: rgba(28, 28, 28, 0.4);
+    color: #e2e2e2;
+}
+
+label{
+    display: block;
+    font-size: 16px;
+    color: #e2e2e2;
+    margin-bottom: 5px;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+#msg{
+    min-height: 150px;
+}
+
+.button{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: #65ffd1;
+    background-color: transparent;
+    border: 2px solid #65ffd1;
+    height: 64px;
+    width: 230px;
+    font-size: 16px;
+    padding: 15px 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(28, 28, 28, 0.4);
 }
