@@ -5,5 +5,7 @@
 }
 
 body{
-    
+    background: linear-gradient(to bottom, black, blue);
+    background-repeat: no-repeat;
+    backgrou;
 }

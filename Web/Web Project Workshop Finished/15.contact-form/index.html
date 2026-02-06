@@ -11,20 +11,22 @@
         <header>
             <h3>Get in Touch</h3>
             <h1>Contact</h1>
-            <p>If you have any questions or would like to discuss a project, feel free to reach out</p>
-            <p>Phone: <a href="#">+1234567890</a></p>
-            <p>Email: email@example.com</p>
+            <div class="contact-info">
+                <p>If you have any questions or would like to discuss a project, feel free to reach out</p>
+                <p>Phone: <a href="#">+1234567890</a></p>
+                <p>Email: email@example.com</p>    
+            </div>
         </header>
         <div class="contact-form">
             <form action="">
-                <label for="">Name</label><br>
-                <input type="text"><br>
-                <label for="">Email</label><br>
-                <input type="text"><br>
-                <label for="">Message</label><br>
-                <textarea name="msg" id=""></textarea>
+                <label for="name" id="name">Name</label><br>
+                <input type="text" id="name" name="user_identifier" required><br>
+                <label for="" id="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="msg" id="msg">Message</label><br>
+                <textarea name="msg" id="msg" rows="5" required></textarea>
             </form>
-            <button>SEND</button>
+            <button type="submit">SEND</button>
         </div>
     </div>
 </body>
