@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #f9f9f9;
@@ -19,6 +15,7 @@ body{
 h1{
     text-align: center;
     margin-bottom: 30px;
+    color: #333;
 }
 
 .questions{
@@ -31,13 +28,44 @@ input{
     display: none;
 }
 
-.questions h2{
+.questions label{
     display: block;
     padding: 18px 24px;
     font-weight: bold;
     position: relative;
     user-select: none;
     color: #2c3e50;
+    cursor: pointer;
     transition: 0.3s;
 }
 
+.questions label:hover {
+    background-color: #f0f0f0;
+}
+
+.questions label::after{
+    content: "+";
+    position: absolute;
+    right: 24px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.ans{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #555;
+    line-height: 1.5;
+    transition: 0.35 ease, 0.35 ease;
+}
+
+.questions input:checked + label::after{
+    content: "-";
+    transform: rotate(180deg);
+}
+
+.questions input:checked ~ .ans{
+    max-height: 300px;
+    padding: 15px 24px 24px 24px;
+}
