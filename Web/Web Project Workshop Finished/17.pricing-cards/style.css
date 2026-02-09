@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding-top: 120px;
+}
+
+header{
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 12px;
+    font-size: 38px;
+    color: white;
+}
+
+header p{
+    font-size: 19px;
+    color: #bbbbbb;
+}
+
+.pricing-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #1e1e2f;
+    padding: 36px 24px;
+    border-radius: 10px;
+    width: 336px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+.price{
+    font-size: 34px;
+    margin: 24px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.price span{
+    font-size: 19px;
+    color: #888;
+}
+
+.card ul{
+    list-style-type: none;
+    margin: 24px 0;
+}
+
+.card ul li{
+    margin-bottom: 12px;
+    color: #cccccc;
+}
+
+.card button{
+    background-color: #1395ff;
+    border: none;
+    color: white;
+    padding: 14px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 19px;
+    margin-top: auto;
+    transition: 0.3s ease;
+}
+
+.card button:hover{
+    background-color: #1769aa;
+}
+
+.active{
+    border: 5px solid #1395ff;
+    transform: scale(1.05);
+}
