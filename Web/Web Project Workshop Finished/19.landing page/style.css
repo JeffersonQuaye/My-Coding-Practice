@@ -145,3 +145,36 @@ header{
 .cta .button{
     margin-top: 20px;
 }
+
+
+/* NEWSLETTER SECTION */
+.newsletter{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.newsletter input{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    width: 250px;
+}
+
+.newsletter form{
+    margin-top: 20px;
+}
+
+.newsletter .button{
+    color: white;
+    background-color: #764ba2;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.newsletter .button:hover{
+    background-color: #5a3c91;
+}
+
+
+/*  TEAM SECTION  */
