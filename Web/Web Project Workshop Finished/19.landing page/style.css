@@ -178,3 +178,37 @@ header{
 
 
 /*  TEAM SECTION  */
+.team{
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.members{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.member{
+    max-width: 200px;
+}
+
+
+/* FOOTER SECTION */
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
