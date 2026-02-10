@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*Header Section*/
+header{
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.logo{
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.button{
+    display: inline-block;
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.button:hover {
+    background-color: #f4f4f4;
+}
+
+
+/* Features Section */
+.features{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.feature{
+    flex: 1 1 250px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature h3{
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+
+/* Testimonials Section*/
+.testimonials{
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.testimonial{
+    max-width: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+
+/* FAQ Section */
+.faq{
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.faq h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item{
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+/* CTA Section */
+.cta{
+    text-align: center;
+    background: linear-gradient(to left, #667eea, #764ba2);
+    color: white;
+    padding: 60px 20px;
+}
+
+.cta h2{
+    font-size: 30px;
+}
+
+.cta p{
+    padding-bottom: 20px;
+}
