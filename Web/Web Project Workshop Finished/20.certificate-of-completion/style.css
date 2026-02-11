@@ -1,3 +1,79 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.certificate{
+    background-color: white;
+    padding: 40px;
+    border: 10px solid #1e5795;
+    width: 800px;
+    text-align: center;
+}
+
+.border{
+    border: 4px dashed #338429;
+    padding: 30px;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #1e5795;
+}
+
+.subheading{
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.name{
+    font-size: 28px;
+    color: #34495e;
+    margin: 20px 0;
+}
+
+.course{
+    font-size: 24px;
+    color: #338429;
+    margin-bottom: 20px;
+}
+
+.date{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.signature-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.signature{
+    text-align: center;
+}
+
+.signature p{
+    font-size: 17px;
+}
+
+.label{
+    margin-top: 5px;
+    color: #555;
+    font-size: 15px;
 }
