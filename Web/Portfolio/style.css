@@ -35,3 +35,62 @@ header ul li{
     padding-right: 10px;
     line-height: 50px;
 }
+
+.intro{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.intro img{
+    width: 100%;
+    height: auto;
+    border-radius: 50% 0;
+}
+
+.intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+}
+
+.intro-text h1{
+    font-size: 50px;
+}
+
+.row{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.profile{
+    position: relative;
+    width: 49%;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    border: 20px solid brown;
+    border-radius: 20px;
+}
+
+.profile-text {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color:  brown;
+}
+
+.bio{
+    margin: auto;
+    width: 49%;
+}
