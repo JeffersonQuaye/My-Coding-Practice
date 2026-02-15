@@ -6,10 +6,13 @@
 
 body{
     background-image: url(background.jpg);
-    width: 100%;
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.body{
+    width: 100%;
 }
 
 .title-bar{
@@ -114,4 +117,43 @@ body{
     color: white;
     display: inline;
     margin-right: 20px;
+}
+
+.benefits{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.row1{
+    padding: 60px 40px 30px;
+}
+
+.row1 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.row1 p{
+    font-size: 20px;
+}
+
+.row2{
+    display: flex;
+    padding: 0 30px;
+    padding-bottom: 100px;
+}
+
+.benefit {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.benefit img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
 }
