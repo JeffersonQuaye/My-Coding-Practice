@@ -1,11 +1,3 @@
-function greet(firstName, lastName) {
-    console.log('Hello ' + firstName + ' ' + lastName);
-}
+let x = 1;
 
-greet('Jeff', 'Quaye');
-
-function square(number) {
-    return number * number
-}
-
-console.log(square(2));
+console.log(x === 1);
