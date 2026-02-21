@@ -26,7 +26,7 @@ function checkSpeed(speed) {
         if (points >= 12) {
             console.log('Points: ', points + '. License Suspended');
         } else {
-            console.log(points);
+            console.log('Points: ', points);
         }
     }
 }
