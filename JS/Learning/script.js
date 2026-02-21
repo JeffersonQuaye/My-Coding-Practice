@@ -31,4 +31,4 @@ function checkSpeed(speed) {
     }
 }
 
-checkSpeed(71);
+checkSpeed(200);
