@@ -1,22 +1,34 @@
-//For Loop
-for (let i = 0; i <= 5; i ++) {
-    console.log(i, 'Hello World');   
+// function fizzbuzz(input) {
+//     if (typeof input !== 'number') {
+//         return NaN;
+//     }else if ((input % 3 === 0) && (input % 5 === 0)) {
+//         return 'FizzBuzz';
+//     } else if (input % 3 === 0) {
+//         return 'Fizz';
+//     } else if (input % 5 === 0) {
+//         return 'Buzz';
+//     } else {
+//         return input;
+//     }
+// }
+
+// const output = fizzbuzz(false);
+// console.log(output);
+
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+
+    if (speed <= speedLimit) {
+        console.log('Ok');
+    } else {
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        if (points >= 12) {
+            console.log('Points: ', points + '. License Suspended');
+        } else {
+            console.log(points);
+        }
+    }
 }
 
-console.log('------------------');
-
-//While Loop
-let j = 0;
-while (j <= 5) {
-    console.log(j, 'Hello World');
-    j++
-}
-
-console.log('------------------');
-
-//Do-While Loop
-let k = 0;
-do {
-    console.log(k, 'Hello World');
-    k++
-} while (k <= 5);
+checkSpeed(71);
