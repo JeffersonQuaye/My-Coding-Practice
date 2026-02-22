@@ -89,14 +89,39 @@
 
 
 //SUM OF MULTIPLES EXERCISE
-console.log(sum(10));
+// console.log(sum(10));
 
-function sum(limits) {
-    let sumOfMultiples = 0;
-    for (let x = 0; x <= limits; x++) {
-        if (x % 3 === 0 || x % 5 === 0) {
-            sumOfMultiples += x;
-        }
+// function sum(limits) {
+//     let sumOfMultiples = 0;
+//     for (let x = 0; x <= limits; x++) {
+//         if (x % 3 === 0 || x % 5 === 0) {
+//             sumOfMultiples += x;
+//         }
+//     }
+//     return sumOfMultiples;
+// }
+
+
+//GRADE CALCULATOR EXERCISE
+const marks = [90, 85, 99];
+console.log(calculateGrade(marks));
+
+function calculateGrade(marks) {
+    let sum = 0;
+    for (let mark of marks) {
+        sum += mark;
     }
-    return sumOfMultiples;
+    let average = sum / marks.length;
+    if (average >= 90 && average <= 100) {
+        return average + ' A';
+    } else if (average >= 80 && average <= 89) {
+        return average + ' B';
+    } else if (average >= 70 && average <= 79) {
+        return average + ' C';
+    } else if (average >= 60 && average <= 69) {
+        return average + ' D';
+    } else {
+        return average + ' F';
+    }
+
 }
