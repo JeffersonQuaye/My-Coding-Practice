@@ -15,20 +15,32 @@
 // const output = fizzbuzz(false);
 // console.log(output);
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const kmPerPoint = 5;
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
 
-    if (speed <= speedLimit +kmPerPoint) {
-        console.log('Ok');
-    } else {
-        const points = Math.floor((speed - speedLimit) / kmPerPoint);
-        if (points >= 12) {
-            console.log('Points: ', points + '. License Suspended');
+//     if (speed <= speedLimit +kmPerPoint) {
+//         console.log('Ok');
+//     } else {
+//         const points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         if (points >= 12) {
+//             console.log('Points: ', points + '. License Suspended');
+//         } else {
+//             console.log('Points: ', points);
+//         }
+//     }
+// }
+
+// checkSpeed(200);
+
+function showNumber(limits) {
+    for (let x = 0; x <= limits; x++) {
+        if (x % 2 === 0) {
+            console.log(x, 'EVEN');
         } else {
-            console.log('Points: ', points);
-        }
+            console.log(x, 'ODD');
+        }        
     }
 }
 
-checkSpeed(200);
+showNumber(20);
