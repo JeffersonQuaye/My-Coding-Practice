@@ -1,6 +1,6 @@
                             //EXERCISES FOR JAVASCRIPT FUNDAMENTALS
 
-
+//FIZZBUZZ EXERCISE
 // function fizzbuzz(input) {
 //     if (typeof input !== 'number') {
 //         return NaN;
@@ -18,6 +18,8 @@
 // const output = fizzbuzz(false);
 // console.log(output);
 
+
+//DEMERIT POINT EXERCISE
 // function checkSpeed(speed) {
 //     const speedLimit = 70;
 //     const kmPerPoint = 5;
@@ -36,6 +38,8 @@
 
 // checkSpeed(200);
 
+
+//EVEN AND ODD EXERCISE
 // function showNumber(limits) {
 //     for (let x = 0; x <= limits; x++) {
 //         if (x % 2 === 0) {
@@ -48,6 +52,8 @@
 
 // showNumber(20);
 
+
+//TRUTHY COUNT EXERCISE
 // const array = [1, 2, 3, 4, 5, 0, '', null, undefined, false];
 
 // console.log(countTruthy(array));
@@ -62,19 +68,35 @@
 //     return count;
 // }
 
-const movie = {
-    title: 'a',
-    releaseYear: 2018,
-    rating: 4.5,
-    director: 'b'
-};
 
-showProperties(movie);
+//STRING COUNT EXERCISE
+// const movie = {
+//     title: 'a',
+//     releaseYear: 2018,
+//     rating: 4.5,
+//     director: 'b'
+// };
 
-function showProperties(obj) {
-    for (const key in obj) {
-        if (typeof obj[key] === "string") {
-            console.log(key, obj[key]);
+// showProperties(movie);
+
+// function showProperties(obj) {
+//     for (const key in obj) {
+//         if (typeof obj[key] === "string") {
+//             console.log(key, obj[key]);
+//         }
+//     }
+// }
+
+
+//SUM OF MULTIPLES EXERCISE
+console.log(sum(10));
+
+function sum(limits) {
+    let sumOfMultiples = 0;
+    for (let x = 0; x <= limits; x++) {
+        if (x % 3 === 0 || x % 5 === 0) {
+            sumOfMultiples += x;
         }
     }
+    return sumOfMultiples;
 }
