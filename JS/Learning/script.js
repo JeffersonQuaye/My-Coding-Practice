@@ -103,25 +103,57 @@
 
 
 //GRADE CALCULATOR EXERCISE
-const marks = [90, 85, 99];
-console.log(calculateGrade(marks));
+// const marks = [90, 85, 99];
+// console.log(calculateGrade(marks));
 
-function calculateGrade(marks) {
-    let sum = 0;
-    for (let mark of marks) {
-        sum += mark;
-    }
-    let average = sum / marks.length;
-    if (average >= 90 && average <= 100) {
-        return average + ' A';
-    } else if (average >= 80 && average <= 89) {
-        return average + ' B';
-    } else if (average >= 70 && average <= 79) {
-        return average + ' C';
-    } else if (average >= 60 && average <= 69) {
-        return average + ' D';
-    } else {
-        return average + ' F';
-    }
+// function calculateGrade(marks) {
+//     let sum = 0;
+//     for (let mark of marks) {
+//         sum += mark;
+//     }
+//     let average = sum / marks.length;
+//     if (average >= 90 && average <= 100) {
+//         return average + ' A';
+//     } else if (average >= 80 && average <= 89) {
+//         return average + ' B';
+//     } else if (average >= 70 && average <= 79) {
+//         return average + ' C';
+//     } else if (average >= 60 && average <= 69) {
+//         return average + ' D';
+//     } else {
+//         return average + ' F';
+//     }
 
+// }
+
+//STAR PATTERN EXERCISE
+// showStars(11);
+
+// function showStars(rows) {
+//     for (let i = 1; i < 10; i++){
+//         let pattern = i + ' ';
+//         for (let j = 0; j < i; j++) {
+//             pattern += '*';
+//         }
+//         console.log(pattern);
+//     }
+// }
+
+//PRIME NUMBER EXERCISE
+showPrimes(20);
+
+function showPrime(limits) {
+    for (let number = 2; number <= limits; number++) {
+        
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+            if (number % factor === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            console.log(number);
+        }
+    }
 }
