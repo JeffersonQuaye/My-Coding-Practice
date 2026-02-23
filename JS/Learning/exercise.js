@@ -159,7 +159,3 @@ function isPrime(number) {
     }
     return true;
 }
-
-
-
-/////////////////            OBJECTS             /////////////////
