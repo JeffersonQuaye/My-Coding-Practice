@@ -106,11 +106,103 @@ console.log('COMBINING AND SLICING ARRAYS');
 const firstArray = [1, 2, 3];
 const secondArray = [4, 5, 6];
 
-//Combining arrays
-console.log('combining arrays');
+//combining arrays using concat
+console.log('combining arrays using concat');
 const combined = firstArray.concat(secondArray);
 console.log(combined);
+
+//combining arrays using the spread operator
+console.log('combining arrays using the spread operator');
+const combined2 = [...firstArray,...secondArray];
+console.log(combined2)
 
 //Slicing an array
 console.log('slicing an array');
 const sliced = combined.slice(2, 4);
+console.log(sliced);
+console.log('-----------------------------\n');
+
+//ITERATING AN ARRAY
+console.log('ITERATING AN ARRAY')
+const numbers5 = [1, 2, 3];
+for (const number of numbers5) {
+    console.log(number);
+}
+console.log('-----------------------------\n');
+
+//JOINING AN ARRAY
+console.log('JOINING AN ARRAY')
+const numbers6 = [1, 2, 3];
+const joined = numbers6.join('')
+console.log(joined);
+console.log('-----------------------------\n')
+
+//SORTING AN ARRAY
+console.log('SORTING AN ARRAY')
+
+//sorting primitive types
+console.log('sorting primitive types');
+const numbers7 = [2, 3, 1]
+numbers7.sort();
+console.log(numbers7);
+numbers7.reverse();
+console.log(numbers7);
+
+//sorting objects
+console.log('sorting objects');
+const courses2 = [
+    {id: 1, name: 'Node.js'},  
+    {id: 2, name: 'Javascript'}
+]
+courses2.sort(function(a, b){
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0
+});
+
+console.log(courses2)
+console.log('----------------------------\n')
+
+//ARRAY TESTING
+console.log('ARRAY TESTING')
+const numbers8 = [1, 2, 3]
+
+const allPositive = numbers8.every(function(value){
+    return value >= 0;
+})
+
+console.log(allPositive);
+console.log('--------------------------\n')
+
+//FILTERING AN ARRAY
+console.log('FILTERING AN ARRAY');
+const numbers9 = [1, -1, 2, 3]
+const filtered = numbers9.filter(value => value >= 0);
+
+console.log(filtered);
+console.log('--------------------------\n')
+
+//MAPPING AN ARRAY
+console.log('MAPPING AN ARRAY')
+const numbers10 = [1, -1, 2, 3]
+const items = numbers10.map(function(n) {
+    const obj ={ value: n }
+    return obj
+});
+
+console.log(items);
+console.log('--------------------------\n')
+
+//REDUCING AN ARRAY
+console.log('REDUCING AN ARRAY')
+const numbers11 = [1, -1, 2, 3]
+let sum = 0;
+for (let n of numbers11) {
+    sum += n;
+}
+console.log(sum)
+
+const sum1 = numbers11.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0)
+console.log(sum1);
