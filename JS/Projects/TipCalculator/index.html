@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <form>
+            <label for="bill" class="bill">Bill Amount ($)</label>
+            <input type="number" id="bill" required>
+            <label for="tip" class="tip">Tip Percentage (%)</label>
+            <input type="number" id="tip" required>
+            <button id="calculateBtn" onclick="calculateTip()">Calculate</button>
+        </form>
+        <div class="result">
+            <p>Tip Amount: <span id="tip-amount"></span></p>
+            <p>Total Amount: <span id="total-amount"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
