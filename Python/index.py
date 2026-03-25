@@ -16,3 +16,6 @@ age = 22
 if 18 <= age < 65:
     print('eligible')
 
+for x in range(5):
+    for y in range(3):
+        print(x , y)
