@@ -62,6 +62,8 @@ def save_user(**user):
 save_user(id = 11220829, name = 'Jefferson Quaye', level = 400)
 print('\n')
 
+
+# THE FIZZBUZZ PROGRAM
 def fizz_buzz(input):
     if input % 3 == 0 and input % 5 == 0:
         return 'FizzBuzz'
@@ -73,3 +75,5 @@ def fizz_buzz(input):
         
         
 print(fizz_buzz(8))
+
+# DSA
