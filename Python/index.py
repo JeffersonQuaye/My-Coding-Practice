@@ -64,6 +64,7 @@ print('\n')
 
 
 # THE FIZZBUZZ PROGRAM
+print('THE FIZZBUZZ PROGRAM')
 def fizz_buzz(input):
     if input % 3 == 0 and input % 5 == 0:
         return 'FizzBuzz'
@@ -75,5 +76,65 @@ def fizz_buzz(input):
         
         
 print(fizz_buzz(8))
+print('\n')
+
 
 # DSA
+print('DSAs')
+print('List')
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for index, number in enumerate(numbers):
+    print(index, number)
+print('\n')    
+    
+
+print('ADDING AND REMOVING FROM A LIST')
+letters = ['a', 'b', 'c', 'e', 'f', 'g', 'h',]
+print(letters)
+print('\n')
+
+#Add
+print('Addint to a list')
+letters.append('d')
+print(letters)
+letters.insert(0, '-')
+print(letters)
+
+#Remove
+print('Removing from a list')
+letters.pop()
+print(letters)
+letters.remove('b')
+print(letters)
+del letters[0:3]
+print(letters)
+letters.clear()
+print(letters)
+print('\n')
+
+#Checking for items
+print('Finding Items')
+letters1 = ['a', 'b', 'c']
+print(letters1.count('d'))
+if 'd' in letters1:
+    print(letters1,index('d'))
+print('\n')
+
+
+#Sorting List
+print('Sorting list')
+numbers1 = [3, 51, 2, 8, 6]
+
+sort = sorted(numbers1, reverse=True)
+print(sort, '\n' , numbers1)
+
+items =[
+    ('Product 1', 10),
+    ('Product 2', 9),
+    ('Product 3', 11)
+]
+
+
+items.sort(key=lambda item:item[1])
+print(items)
