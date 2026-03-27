@@ -135,6 +135,19 @@ items =[
     ('Product 3', 11)
 ]
 
+# items.sort(key=lambda item:item[1])
+# print(items)
 
-items.sort(key=lambda item:item[1])
-print(items)
+# prices = list(map(lambda item:item[1], items))
+prices = [item[1] for item in items]
+print(prices)
+
+filtered = list(filter(lambda item: item[1] >= 10, items))
+
+print(filtered)
+
+list1 = [1, 2, 3,]
+list2 = [10, 20, 30]
+
+allList = list(zip(list1, list2))
+print(allList)
