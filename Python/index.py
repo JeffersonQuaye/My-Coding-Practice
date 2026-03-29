@@ -151,3 +151,67 @@ list2 = [10, 20, 30]
 
 allList = list(zip(list1, list2))
 print(allList)
+
+from collections import deque
+
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()
+print(queue)
+
+print('\n')
+
+# ARRAYS
+print('Arrays')
+from array import array
+
+numbers2 = array('i', [1, 2, 3])
+print(numbers2)
+print('\n')
+
+# SETS
+print("Sets")
+numbers3 = [1, 1, 2, 3, 4]
+first = set(numbers3)
+second = {1, 5}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(second ^ first)
+print('\n')
+
+# DICTIONARIES
+print('Dictionaries')
+point = dict(x=1, y=2)
+point['x'] = 10
+point["z"] = 20
+print(point)
+del point['z']
+print(point)
+
+values = (x * 2 for x in range(5))
+print(values)
+
+values1 = list(range(5))
+print(*values1)
+print('\n')
+
+# Exercise
+print('Exercise')
+from pprint import pprint
+
+sentence = 'This is a common interview question'
+
+char_frequency = {}
+
+for char in sentence:
+    if char in char_frequency:
+        char_frequency[char] += 1
+    else:
+        char_frequency[char] = 1
+
+char_frequency_sorted = sorted(char_frequency.items(), key=lambda kv:kv[1], reverse=True)
+print(char_frequency_sorted[0])
