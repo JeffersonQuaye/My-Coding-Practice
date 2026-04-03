@@ -49,4 +49,65 @@ cloud.add("python")
 cloud.add("python")
 cloud.add("python")
 cloud['java']
-print(cloud.__tags)
+print(cloud.__dict__)
+print(cloud._TagCloud__tags)
+
+
+class Product:
+    def __init__(self, price):
+        self.price = price
+        
+    @property
+    def price(self):
+        return self.__price
+
+    @price.setter
+    def price(self, value):
+        if value < 0:
+            raise ValueError('Price cannot be negative(-)')
+        self.__price = value
+
+product = Product(-50)
+
+
+class Animal:
+    def __init__(self):
+        print('Animal Constructor')
+        self.age = 1
+    
+    def eat(self):
+        print('eat')
+
+class Mammals(Animal):
+    def __init__(self):
+        super().__init__()
+        print('Mammals Constructor')
+        self.weight = 2
+    
+    def walk(self):
+        print('walk')
+
+class Fish(Animal):
+    def swim(self):
+        print('swim')
+
+
+class Bird(Animal):
+    def fly(self):
+        print('fly')
+
+
+m = Mammals()
+m.eat()
+
+
+class Employee:
+    def greet(self):
+        print('Employee Greet')
+        
+class Person:
+    def greet(self):
+        print('Person Greet')
+        
+class Manager(Employee, Person):
+    pass
