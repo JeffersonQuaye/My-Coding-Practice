@@ -1,4 +1,3 @@
-from sales import calc_shipping, calc_tax
+import ecom.shopping.sales as sales
 
-calc_tax()
-calc_shipping()
+
