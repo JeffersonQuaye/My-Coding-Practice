@@ -1,3 +1,2 @@
-import ecom.shopping.sales as sales
+from ecom.shopping import sales
 
-factorial(5)
