@@ -217,15 +217,38 @@
 # print(char_frequency_sorted[0])
 
 
-from pathlib import Path
+# from importlib.resources import path
+# from pathlib import Path
+# from zipfile import ZipFile
 
-path = Path("ecom")
+# with ZipFile('files.zip', 'w') as zip:
+#     for path in Path('ecom').rglob('*.*'):
+#         zip.write(path)
+
+# with ZipFile('files.zip') as zip:
+#     print(zip.namelist())
+#     zip.extractall('extract')
 
 # path.exists()
 # path.mkdir()
 # path.rmdir()
 # path.rename()
 
-path = [p for p in path.iterdir()]
+# METHODS FOR PATH FILES
+# path.exists() # checks if the file exists
+# path.rename('init.txt') # renames the file
+# path.unlink() # delete the file
+# path.stat() # gives us the details of the file such as size, creation time, last modified time, etc.
+# path.read_bytes() # reads the file as bytes
+# path.read_text() # reads the file as text
+# path.write_text('This is a test') # writes text to the file
+# path.write_bytes() 
 
-print(path)
+# import csv
+
+# with open('data.csv',) as file:
+#     reader = csv.reader(file)
+#     list = list(reader)
+#     print(list)
+
+
