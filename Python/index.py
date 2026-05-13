@@ -252,3 +252,43 @@
 #     print(list)
 
 
+# import json
+# from pathlib import Path
+
+# data = Path('movies.json').read_text()
+# movies = json.loads(data)
+# print(movies[1]['title'])
+
+
+# import sqlite3
+# import json
+# from pathlib import Path
+
+
+# with sqlite3.connect('db.sqlite3') as conn:    
+#     command = 'SELECT * FROM Movies'
+#     cursor = conn.execute(command)
+#     for row in cursor:
+#         print(row)
+
+
+# import time
+
+# def send_email():
+#     for i in range(10000):
+#         pass
+    
+# start = time.time()
+# send_email()
+# end = time.time()
+# duration  = end - start
+# print(duration)
+
+
+from datetime import datetime
+
+dt = datetime(2018, 1, 1)
+print(dt)
+print(dt.year)
+print(dt.month)
+print(datetime.now())
