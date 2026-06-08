@@ -239,10 +239,10 @@
 # path.rename('init.txt') # renames the file
 # path.unlink() # delete the file
 # path.stat() # gives us the details of the file such as size, creation time, last modified time, etc.
-# path.read_bytes() # reads the file as bytes
-# path.read_text() # reads the file as text
+# path.read_bytes() # reads the file as bytes or binary data
+# path.read_text() # reads the file as text or string
 # path.write_text('This is a test') # writes text to the file
-# path.write_bytes() 
+# path.write_bytes() writes bytes to the file
 
 # import csv
 
