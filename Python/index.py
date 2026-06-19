@@ -244,7 +244,7 @@
 # path.write_text('This is a test') # writes text to the file
 # path.write_bytes() writes bytes to the file
 
-# import csv
+# import csve
 
 # with open('data.csv',) as file:
 #     reader = csv.reader(file)
@@ -285,10 +285,20 @@
 # print(duration)
 
 
-from datetime import datetime
+# from datetime import datetime
 
-dt = datetime(2018, 1, 1)
-print(dt)
-print(dt.year)
-print(dt.month)
-print(datetime.now())
+# dt = datetime(2018, 1, 1)
+# print(dt)
+# print(dt.year)
+# print(dt.month)
+# print(datetime.now())
+
+
+# Read N
+n = int(input())
+
+# Print the number pyramid
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=' ')
+    print()
