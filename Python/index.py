@@ -257,12 +257,18 @@
 
 # data = Path('movies.json').read_text()
 # movies = json.loads(data)
-# print(movies[1]['title'])
 
 
 # import sqlite3
 # import json
 # from pathlib import Path
+
+
+# with sqlite3.connect('db.sqlite3') as conn:
+#     command = 'INSERT INTO Movies VALUES(?, ?, ?)'
+#     for movie in movies:
+#         conn.execute(command, tuple(movie.values()))
+#     conn.commit()
 
 
 # with sqlite3.connect('db.sqlite3') as conn:    
@@ -285,20 +291,57 @@
 # print(duration)
 
 
-# from datetime import datetime
+# from datetime import datetime, timedelta
 
-# dt = datetime(2018, 1, 1)
+# dt1 = datetime(2018, 1, 1)
+# dt2 = datetime.now()
 # print(dt)
 # print(dt.year)
 # print(dt.month)
 # print(datetime.now())
 
+# duration = dt2 - dt1
+# print(duration)
+# print(f'days {duration.days}')
+# print(f'seconds {duration.seconds}')
+# print(f'total seconds {duration.total_seconds()}')
 
-# Read N
-n = int(input())
+# from random import random, randint, choice, choices, shuffle
+# import string
 
-# Print the number pyramid
-for i in range(1, n + 1):
-    for j in range(1, i + 1):
-        print(j, end=' ')
-    print()
+# print(random())
+# print(randint(1, 10))
+# print(choice([1, 2, 3, 4, 5]))
+# print(choices([1, 2, 3, 4, 5], k=2))
+# print(''.join(choices(string.ascii_letters + string.digits, k=10)))
+
+# numbers = [1, 2, 3, 4, 5]
+# shuffle(numbers)
+# print(numbers)
+
+
+# import webbrowser
+
+# print('Deployment completed')
+# webbrowser.open('http://fitgirl-repacks.site')
+
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# import smtplib
+
+# message = MIMEMultipart()
+# message['from'] = 'Jefferson Quaye'
+# message['to'] = 'testuser@example.com'
+# message['subject'] = 'Test Email'
+# message.attach(MIMEText('Body'))
+
+# with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+#     smtp.ehlo()
+#     smtp.starttls()
+#     smtp.login('your-email@gmail.com', 'your-password')
+#     smtp.send_message(message)
+#     print('Email sent successfully')
+
+import subprocess
+
+subprocess.run(['ls', '-l'])
