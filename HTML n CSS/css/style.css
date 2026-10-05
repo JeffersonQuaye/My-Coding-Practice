@@ -1,15 +1,29 @@
-body{
+@font-face {
+    font-family: 'opensans';
+    src: url('Fonts-open-san/opensans-bold-webfont.woff2') format('woff2'),
+         url('Fonts-open-san/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('Fonts-open-san/opensans-regular-webfont.woff2') format('woff2'),
+         url('Fonts-open-san/opensans-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
     margin: 10px;
+    font-family: 'opensans' ,Arial, Helvetica, sans-serif;
 }
 
-.box{
-    width: 200px;
-    height: 200px;
-    background: gold;
-    box-shadow: 0 0 10px gray;
-}
-
-h1{
-    color: white;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+p{
+    font-weight: normal;
+    /* font-style: italic; */
+    font-size: 1rem;
+    color: #333;
 }
